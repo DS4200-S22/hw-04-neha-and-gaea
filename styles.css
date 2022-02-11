@@ -1,0 +1,19 @@
+ head {font-family: Arial;}
+ body {font-family: Arial;}
+
+ h1 {text-align: center;
+    font-size: 50;}
+
+ 
+
+.circle1 {
+   fill: seagreen;
+}
+
+.circle2 {
+  fill: skyblue;
+}
+
+.circle3 {
+  fill: purple;
+}
