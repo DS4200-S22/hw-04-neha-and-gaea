@@ -1,13 +1,31 @@
-function button1Clicked() { 
-
-var circleSelector = document.getElementsByClassName("text1");
-
-var myClickFunction = function() {
-  var previousNumber = +this.innerHTML || 0;
-  this.innerHTML = previousNumber + 1;
-};
-
-for (var i = 0; i < circleSelector.length; i++) {
-  circleSelector[i].addEventListener('click', myClickFunction, false);
+function cirCount(element) {
+let text = document.getElementById('text1')
+  var count = parseInt(text.innerHTML);
+  count++;
+  text.innerHTML = count;
 }
+
+
+
+function mouseOverEffect() {
+    let cir = document.getElementById('mouse');
+    cir.style.stroke = "black";
+}
+function mouseOutEffect() {
+    let cir = document.getElementById('mouse');
+    cir.style.stroke = "none";
+}
+
+
+var count = 0;
+function hide() {
+    let cir3 = document.getElementById('cir_three'); 
+    count++;
+    if(count % 2 == 0) { 
+        cir3.style.opacity = "1";
+    }
+    else {
+        cir3.style.opacity = "0";
+    }
+
 }
