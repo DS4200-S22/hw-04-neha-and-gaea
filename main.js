@@ -10,6 +10,7 @@ let text = document.getElementById('text1')
 function mouseOverEffect() {
     let cir = document.getElementById('mouse');
     cir.style.stroke = "black";
+    cir.style.strokewidth = "2px";
 }
 function mouseOutEffect() {
     let cir = document.getElementById('mouse');
